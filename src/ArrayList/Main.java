@@ -9,8 +9,12 @@ public class Main {
         arrayList.add(5);
         arrayList.add(16);
         arrayList.add(34);
+        arrayList.add(3);
+        arrayList.add(5);
         System.out.println(arrayList.getSize());
         System.out.println(arrayList.toString());
-        System.out.println(Arrays.asList(arrayList));
+        arrayList.remove(2);
+        System.out.println(arrayList.getSize());
+        System.out.println(arrayList.toString());
     }
 }

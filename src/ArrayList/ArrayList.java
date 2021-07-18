@@ -9,11 +9,10 @@ public class ArrayList<T> {
     private int pointer = 0;
 
     public void add(T item){
-        pointer = array.length-1;
         if (pointer == array.length-1){
             resize(array.length*2);
-            array[pointer++] = item;
         }
+        array[pointer++] = item;
     }
 
     public T get(int index){
@@ -37,12 +36,6 @@ public class ArrayList<T> {
         Object[] newArray = new Object[newLength];
         System.arraycopy(array,0,newArray,0,pointer);
         array = newArray;
-    }
-
-    public void printArrayList(){
-        for (int i=0;i<array.length-1;i++){
-            System.out.println(Arrays.asList(array));
-        }
     }
 
     @Override
